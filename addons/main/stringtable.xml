@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="aet_plan_importer">
+    <Package name="Main">
+        <Key ID="STR_aet_plan_importer_URL">
+            <English>https://github.com/Nomas-X/AET_Plan_Importer</English>
+        </Key>
+        <Key ID="STR_aet_plan_importer_author">
+            <English>Antistasi Event Team</English>
+        </Key>
+    </Package>
+</Project>

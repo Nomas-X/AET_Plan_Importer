@@ -1,0 +1,23 @@
+
+[default]
+workshop = [
+    "450814997",  # CBA_A3's Workshop ID
+	"1508091616", # Metis Marker
+	"1673595418", # User Input Menus
+]
+
+dlc = []
+optionals = []
+
+parameters = [
+    "-window",
+    "-noPause",
+    "-noPauseAudio",
+	"-debug",
+	"-showScriptErrors",
+]
+
+[Altis]
+extends = "default"
+dlc = ["ws","rf", "vn"]
+mission = "testMissionRF.Altis"
