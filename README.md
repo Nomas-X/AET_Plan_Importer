@@ -45,3 +45,6 @@ If you want to grant a specific unit access to the plan importer actions without
 player setVariable ["AET_plan_importer_alwaysAllowed", true, true];
 ```
 The plan importer must still be enabled for this to take effect.
+
+## Incompatibilities
+This mod must not be loaded with [AET Auxiliaries](https://steamcommunity.com/sharedfiles/filedetails/?id=3349453883).
