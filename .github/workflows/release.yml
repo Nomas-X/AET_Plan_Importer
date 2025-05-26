@@ -35,7 +35,7 @@ jobs:
         - name: Update to Steam Workshop (stable)
           uses: arma-actions/workshop-upload@v1
           with:
-            itemId: '3349453883'
+            itemId: '3488328833'
             contentPath: './@AET_PLAN_IMPORTER-${{ env.VERSION }}'
             changelog: |
               https://github.com/Nomas-X/AET_PLAN_IMPORTER/releases/tag/p${{ env.VERSION }}
