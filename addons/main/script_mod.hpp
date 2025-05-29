@@ -1,5 +1,5 @@
 #define MAINPREFIX z
-#define PREFIX AET
+#define PREFIX AET_PI
 
 #define PREFIX_BEAUTIFIED AET Plan Importer
 
