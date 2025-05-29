@@ -38,7 +38,7 @@ jobs:
             itemId: '3488328833'
             contentPath: './@AET_PLAN_IMPORTER-${{ env.VERSION }}'
             changelog: |
-              https://github.com/Nomas-X/AET_PLAN_IMPORTER/releases/tag/p${{ env.VERSION }}
+              https://github.com/Nomas-X/AET_PLAN_IMPORTER/releases/tag/${{ env.VERSION }}
 
               ${{ github.event.release.body }}
           env:
