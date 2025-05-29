@@ -1,6 +1,8 @@
 ## Description
 This addon handles the plan import function that allows importing plans from https://maps.plan-ops.fr. We will go over its functionality, and how it is utilized.
 
+You can find the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3488328833).
+
 ## How It Works
 A player can use the "Import Plan" and "Delete Plan" diary actions, located under the "AET Actions" section in the briefing/diary, if permitted by the CBA settings. Admins can always use these actions as long as the plan importer is enabled. The player must copy the Arma 3 plan export from [PLANOPS](https://maps.plan-ops.fr) and paste it into the input box. Each side can have only one imported plan at a time; importing a new plan will automatically replace the previous one for that side. All import attempts are logged, recording the importer's name, ID64, import channel, and import text. If the import text does not match the expected pattern, the attempt will be denied. If the pattern matches but contains an unexpected data type during parsing, the attempt will be logged, and an admin will be notified. The below picture shows how the plan importing process looks like:
 
