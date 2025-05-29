@@ -42,7 +42,7 @@ In the below picture you can see the list of addon options that this addon provi
 ## Additional
 If you want to grant a specific unit access to the plan importer actions without relying on rank, group leader status, or admin privileges, you can assign it a flag using the following code:
 ```sqf
-player setVariable ["AET_plan_importer_alwaysAllowed", true, true];
+player setVariable ["AET_PI_core_alwaysAllowed", true, true];
 ```
 The plan importer must still be enabled for this to take effect.
 
