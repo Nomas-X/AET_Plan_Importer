@@ -12,7 +12,7 @@ Return Value:
 	<Nil>
 
 Example:
-	[] call AET_plan_importer_fnc_selectChannel;
+	[] call AET_PI_core_fnc_selectChannel;
 */
 
 if (SET(importChannel) == -1) then {

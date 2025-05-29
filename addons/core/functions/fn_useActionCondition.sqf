@@ -12,7 +12,7 @@ Return Value:
 	<Boolean> If true then the actions will be shown, if false then the actions will be hidden.
 
 Example:
-	[] call AET_plan_importer_fnc_useActionCondition;
+	[] call AET_PI_core_fnc_useActionCondition;
 */
 
 ( SET(groupLeaders_enabled) && { leader player == player } )

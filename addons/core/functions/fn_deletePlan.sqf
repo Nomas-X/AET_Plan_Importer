@@ -12,7 +12,7 @@ Return Value:
 	<Boolean> It is used to signify that the markers are no longer being deleted and that the function has finished.
 
 Example:
-	[west] call AET_plan_importer_fnc_deleteMarkers;
+	[west] call AET_PI_core_fnc_deleteMarkers;
 */
 
 params ["_side"];

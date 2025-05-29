@@ -14,7 +14,7 @@ Return Value:
 	<Nil>
 
 Example:
-	[] call AET_plan_importer_fnc_pretInit;
+	[] call AET_PI_core_fnc_pretInit;
 */
 
 [QGVAR(EH_parsingError), FUNC(notifyAdmin)] call CBA_fnc_addEventHandler;

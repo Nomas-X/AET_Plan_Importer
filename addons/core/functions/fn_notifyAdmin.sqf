@@ -14,7 +14,7 @@ Return Value:
 	<Nil>
 
 Example:
-	[] call AET_plan_importer_fnc_notifyAdmin;
+	[] call AET_PI_core_fnc_notifyAdmin;
 */
 
 params ["_player", "_plan"];

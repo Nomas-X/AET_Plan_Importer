@@ -3,7 +3,7 @@
 Author: Redwan S. / Nomas
 
 Description:
-    This function is used to create the markers after the input has been parsed by the AET_plan_importer_fnc_importPlan function.
+    This function is used to create the markers after the input has been parsed by the AET_PI_core_fnc_importPlan function.
 
 Arguments:
 	0. <Number> Channel ID that the markers will be created in.
@@ -19,7 +19,7 @@ Return Value:
 	<Nil>
 
 Example:
-	[0, [[[583799,7164.790174002048,14910.015476361426,"mil_circle","ColorBlue","Weeee",0,1]],[[583800,[7126.737950263193,16000.22673069453,7133.663837484051,15092.303595865986],"ColorPink"]],[[583798,7128.2351220938735,16190.333386507982,"blu",false,0,0,0,0,"Hoorah",1]]]] call AET_plan_importer_fnc_createMarkers;
+	[0, [[[583799,7164.790174002048,14910.015476361426,"mil_circle","ColorBlue","Weeee",0,1]],[[583800,[7126.737950263193,16000.22673069453,7133.663837484051,15092.303595865986],"ColorPink"]],[[583798,7128.2351220938735,16190.333386507982,"blu",false,0,0,0,0,"Hoorah",1]]]] call AET_PI_core_fnc_createMarkers;
 */
 
 params ["_channelSelection", "_plan"];

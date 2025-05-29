@@ -12,7 +12,7 @@ Return Value:
 	<Nil>
 
 Example:
-	[0] call AET_plan_importer_fnc_importPlan;
+	[0] call AET_PI_core_fnc_importPlan;
 */
 
 params ["_channelSelection"];
@@ -37,8 +37,7 @@ params ["_channelSelection"];
 
 				private _errorHandler = addMissionEventHandler ["ScriptError", {
 					params ["_errorText", "_sourceFile", "_lineNumber", "_errorPos", "_content", "_stackTraceOutput"];
-
-					if (_errorText == "parseSimpleArray format error" && {_sourceFile == "z\aet_plan_importer\addons\plan_importer\functions\fn_importPlan.sqf"}) then {
+					if (_errorText == "parseSimpleArray format error" && {_sourceFile == "z\aet_pi\addons\core\functions\fn_importPlan.sqf"}) then {
 						GVAR(parseFlag) = 1;
 					};
 				}];
