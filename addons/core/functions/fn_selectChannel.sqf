@@ -16,13 +16,23 @@ Example:
 */
 
 if (SET(importChannel) == -1) then {
+	allowedChannels = [
+		[["Global Chat", [1.00, 1.00, 1.00, 1.00]], [], [], [], "Import plan to Global chat", "", 0], 
+		[["Side Chat", [0.13, 0.77, 1.00, 1.00]], [], [], [], "Import plan to Side chat", "", 1],
+		[["Command Chat", [1, 0.96, 0.4, 1.00]], [], [], [], "Import plan to Command chat", "", 2],
+		[["Group Chat", [1, 0.96, 0.4, 1.00]], [], [], [], "Import plan to Group chat", "", 3]
+	];
+
+	for "_radioId" from 1 to 10 do {
+		channelInfo = radioChannelInfo _radioId;
+		if (channelInfo select 5) then {
+			allowedChannels append [[[(channelInfo select 1),(channelInfo select 0)],[],[],[], str ("Import to " + (channelInfo select 1)), "", (_radioId + 5)]];
+		};
+	};
+
 	[
 		[
-			[
-				[["Global Chat", [1.00, 1.00, 1.00, 1.00]], [], [], [], "Import plan to Global chat", "", 0], 
-				[["Side Chat", [0.13, 0.77, 1.00, 1.00]], [], [], [], "Import plan to Side chat", "", 1],
-				[["Command Chat", [1, 0.96, 0.4, 1.00]], [], [], [], "Import plan to Command chat", "", 2]
-			],
+			allowedChannels,
 			0,
 			false
 		],
