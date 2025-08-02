@@ -32,7 +32,7 @@
 	"LIST",
 	["Import Channel", "The channel the plan would be imported to. ""Selector"" allows the user to choose from all listed channels."],
 	["AET Plan Importer"],
-	[[-1, 0, 1, 2],["Channel Selector", "Global", "Side", "Command"], 0],
+	[[-1, 0, 1, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],["Channel Selector", "Global", "Side", "Command", "Group", "Custom 1", "Custom 2", "Custom 3", "Custom 4", "Custom 5", "Custom 6", "Custom 7", "Custom 8", "Custom 9", "Custom 10"], 0],
 	1,
 	{},
 	false
