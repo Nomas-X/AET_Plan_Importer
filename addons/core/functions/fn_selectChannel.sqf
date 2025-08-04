@@ -26,7 +26,10 @@ if (SET(importChannel) == -1) then {
 	for "_radioId" from 1 to 10 do {
 		channelInfo = radioChannelInfo _radioId;
 		if (channelInfo select 5) then {
-			allowedChannels append [[[(channelInfo select 1),(channelInfo select 0)],[],[],[], str ("Import to " + (channelInfo select 1)), "", (_radioId + 5)]];
+			if (((channelInfo select 3) findIf {_x == player}) != -1) then {
+				allowedChannels append [[[(channelInfo select 1),(channelInfo select 0)],[],[],[], str ("Import to " + (channelInfo select 1)), "", (_radioId + 5)]];
+			}
+			
 		};
 	};
 
