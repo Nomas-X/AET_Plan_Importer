@@ -19,8 +19,6 @@ private _code = {
 	if (hasInterface) then {
 		player createDiarySubject ["AntistasiEventTeamActions","AET Actions"];
 
-		AET_TEST = QGVAR(TEST);
-
 		player createDiaryRecord ["AntistasiEventTeamActions", ["Plan Importer", "
 			How to import your plan into Arma 3 <t colorLink='#0000ff'><a href='https://maps.plan-ops.fr'>PLANOPS</a></t>:<br/><br/>
 			
